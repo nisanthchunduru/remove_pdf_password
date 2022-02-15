@@ -16,18 +16,27 @@ Install Ghostscript
 brew install gs
 ```
 
-Clone the repo
+Clone the repo and cd into it
 
 ```
 git clone git@github.com:nisanth074/remove_pdf_password.git
+cd remove_pdf_password/
+```
+
+Install gems
+
+```
+gem install bundler
+bundle install
 ```
 
 Remove your PDF's password
 
 ```
-cd remove_pdf_password
-./remove_pdf_password /Users/nisanth/Downloads/Aadhaar\ Card.pdf
+bundle exec remove_pdf_password /Users/nisanth/Downloads/Aadhaar\ Card.pdf
 ```
+
+The `remove_pdf_password` utility will create a file named `Aadhaar Card Unlocked.pdf` in the same directory
 
 ## Todos
 
